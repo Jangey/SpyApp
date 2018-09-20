@@ -5,7 +5,7 @@ class SpyAppViewController: UIViewController {
     @IBOutlet weak var input: UITextField!
     @IBOutlet weak var secret: UITextField!
     @IBOutlet weak var output: UILabel!
-
+    
     let factory = CipherFactory()
     var cipher: Cipher?
 

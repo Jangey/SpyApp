@@ -9,6 +9,7 @@ protocol Cipher {
  Ceaser:
  
  Shifting each input char by secret space.
+ Valid input can be char, digit and symbol.
  
  Plaintext :    12345ABCDEFG
  Encode:        23456BCDEFGH
@@ -53,6 +54,7 @@ struct CeaserCipher: Cipher {
  Alphanumeric:
  
  Shifting each input char by secret space.
+ Valid input can be only letter and number.
  Shifting by 1:
  Z maps to 0, 9 maps to A
  Shifting by -1:
@@ -120,7 +122,9 @@ struct AlphanumericCipher: Cipher {
  ROT13:
  
  Shifting only letter 13 space.
+ Valid input can be only letter.
  No secret request (If input secret, print out "Error encoding")
+ 
  
  Plaintext :    ABCDEFGHIJKLMNOPQRSTUVWXYZ
  Encode:        ZYXWVUTSRQPONMLKJIHGFEDCBA
@@ -186,6 +190,7 @@ struct ROT13Cipher: Cipher {
  Triple:
  
  Shifting each input char by 3 * secret space.
+ Valid input can be char, digit and symbol.
  
  Plaintext :    123abc
  secret:        3
