@@ -76,7 +76,7 @@
                                 <rect key="frame" x="73" y="96" width="95" height="30"/>
                                 <state key="normal" title="Alphanumeric"/>
                                 <connections>
-                                    <action selector="AlphanumericButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8L-Gs-eV3"/>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efH-NA-2Ns"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a95-ZO-MqS">

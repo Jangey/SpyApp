@@ -26,18 +26,18 @@ class SpyAppViewController: UIViewController {
     }
 
     @IBAction func encodeButtonPressed(_ sender: UIButton) {
+        
         guard let cipher = self.cipher else {
             output.text = "No cipher selected"
             return
         }
-        //output encoded text
         if let encoded = cipher.encode(plaintext, secret: secretText) {
             output.text = encoded
         } else {
             output.text = "Error encoding"
         }
-    
     }
+
     
     @IBAction func decodeButtonPressed(_ sender: UIButton) {
         guard let cipher = self.cipher else {
@@ -64,6 +64,7 @@ class SpyAppViewController: UIViewController {
         cipher = factory.cipher(for: buttonText)
     }
     
+    /*
     @IBAction func AlphanumericButtonPressed(_ sender: UIButton) {
         guard
             let buttonLable = sender.titleLabel,
@@ -74,7 +75,6 @@ class SpyAppViewController: UIViewController {
         }
         cipher = factory.cipher(for: buttonText)
     }
-    
-    
+    */
 }
 
