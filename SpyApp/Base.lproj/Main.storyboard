@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq1-Ko-TkT">
-                                <rect key="frame" x="20" y="219" width="157.5" height="42"/>
+                                <rect key="frame" x="20" y="219" width="157.5" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.97653021240875104" blue="0.81140512002431953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <state key="normal" title="encode">
                                     <color key="titleColor" red="0.0" green="0.47001315310000003" blue="0.7208609533" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -30,9 +30,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiO-kp-6lu">
-                                <rect key="frame" x="197.5" y="219" width="157.5" height="42"/>
+                                <rect key="frame" x="197.5" y="219" width="157.5" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.97653021240000004" blue="0.81140511999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <state key="normal" title="decode">
                                     <color key="titleColor" red="0.0" green="0.47001315310000003" blue="0.7208609533" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -47,9 +47,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-gE-Std">
-                                <rect key="frame" x="20" y="121" width="162.5" height="34"/>
+                                <rect key="frame" x="50" y="121" width="132.5" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.1213029033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Ceasar"/>
                                 <connections>
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZID-fk-SIM"/>
@@ -68,25 +68,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-dI-YNq">
-                                <rect key="frame" x="136" y="291" width="103" height="36"/>
+                                <rect key="frame" x="146" y="285" width="83" height="29"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-Is-TFj">
-                                <rect key="frame" x="20" y="165" width="162.5" height="34"/>
+                                <rect key="frame" x="50" y="165" width="132.5" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.1213029033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="ROT13"/>
                                 <connections>
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HII-rU-NpF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-Lj-oAV">
-                                <rect key="frame" x="192.5" y="165" width="162.5" height="34"/>
+                                <rect key="frame" x="192.5" y="165" width="132.5" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.1213029033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Triple"/>
                                 <connections>
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayi-cR-ec2"/>
@@ -99,16 +99,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsX-8Z-NWz">
-                                <rect key="frame" x="192.5" y="121" width="162.5" height="34"/>
+                                <rect key="frame" x="192.5" y="121" width="132.5" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.1213029033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Alphanumeric"/>
                                 <connections>
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efH-NA-2Ns"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48c-5E-e8N">
-                                <rect key="frame" x="20" y="337" width="335" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="outputPlainText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48c-5E-e8N">
+                                <rect key="frame" x="20" y="324" width="335" height="20.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.79615480390000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -145,13 +145,13 @@
                             <constraint firstItem="xiO-kp-6lu" firstAttribute="leading" secondItem="kq1-Ko-TkT" secondAttribute="trailing" constant="20" id="f49-D8-Hbi"/>
                             <constraint firstItem="1xg-Lj-oAV" firstAttribute="top" secondItem="wsX-8Z-NWz" secondAttribute="bottom" constant="10" id="fHV-Do-abG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xiO-kp-6lu" secondAttribute="trailing" constant="20" id="fpk-n7-rea"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wsX-8Z-NWz" secondAttribute="trailing" constant="20" id="gFJ-Bt-6pw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wsX-8Z-NWz" secondAttribute="trailing" constant="50" id="gFJ-Bt-6pw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="48c-5E-e8N" secondAttribute="bottom" constant="20" id="jhm-fn-CoI"/>
                             <constraint firstItem="IU8-P1-mBo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="jy1-qb-e8c"/>
                             <constraint firstItem="dTw-Is-TFj" firstAttribute="top" secondItem="cW2-gE-Std" secondAttribute="bottom" constant="10" id="nkJ-qr-Lki"/>
                             <constraint firstItem="wsX-8Z-NWz" firstAttribute="width" secondItem="1xg-Lj-oAV" secondAttribute="width" id="pNK-bn-8dq"/>
-                            <constraint firstItem="cW2-gE-Std" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qae-09-rPm"/>
-                            <constraint firstItem="dTw-Is-TFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rSh-yl-XAF"/>
+                            <constraint firstItem="cW2-gE-Std" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qae-09-rPm"/>
+                            <constraint firstItem="dTw-Is-TFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rSh-yl-XAF"/>
                             <constraint firstItem="1xg-Lj-oAV" firstAttribute="leading" secondItem="dTw-Is-TFj" secondAttribute="trailing" constant="10" id="sxX-vH-Ufb"/>
                             <constraint firstItem="dTw-Is-TFj" firstAttribute="top" secondItem="cW2-gE-Std" secondAttribute="bottom" constant="10" id="tu6-S1-Goq"/>
                             <constraint firstItem="xiO-kp-6lu" firstAttribute="top" secondItem="1xg-Lj-oAV" secondAttribute="bottom" constant="20" id="u50-OS-U4T"/>
