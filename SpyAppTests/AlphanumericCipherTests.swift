@@ -24,5 +24,11 @@ class AlphanumericCipherTests: XCTestCase {
         
         XCTAssertNil(result)
     }
+    
+    func test_multiplyCharAndDigit(){
+        let plaintext = "abc123"
+        let result = cipher.encode(plaintext, secret: "3")
+        XCTAssertEqual("DEF456", result)
+    }
 
 }

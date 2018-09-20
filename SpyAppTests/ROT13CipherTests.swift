@@ -23,5 +23,11 @@ class ROT13CipherTests: XCTestCase {
         
         XCTAssertNil(result)
     }
+    
+    func test_multiplyCharAndDigit(){
+        let plaintext = "abc123"
+        let result = cipher.encode(plaintext, secret: "3")
+        XCTAssertNil(result)
+    }
 
 }
