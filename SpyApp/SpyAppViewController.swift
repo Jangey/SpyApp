@@ -63,18 +63,5 @@ class SpyAppViewController: UIViewController {
         }
         cipher = factory.cipher(for: buttonText)
     }
-    
-    /*
-    @IBAction func AlphanumericButtonPressed(_ sender: UIButton) {
-        guard
-            let buttonLable = sender.titleLabel,
-            let buttonText = buttonLable.text
-            else {
-                output.text = "No button or no button text"
-                return
-        }
-        cipher = factory.cipher(for: buttonText)
-    }
-    */
 }
 
