@@ -50,7 +50,15 @@ struct AlphanumericCeaserCipher: Cipher {
         
         for character in newPlaintext {
             let unicode = character.unicodeScalars.first!.value
-            let shiftedUnicode = unicode + shiftBy
+            var shiftedUnicode = unicode + shiftBy
+            
+            // cyclical characters between A-Z or 0-9
+            if shiftedUnicode > 90 {
+                shiftedUnicode = shiftedUnicode - 43
+            } else if 58 <= shiftedUnicode && shiftedUnicode <= 64 {
+                shiftedUnicode = shiftedUnicode + 7
+            }
+            
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             encoded = encoded + shiftedCharacter
         }
@@ -67,7 +75,15 @@ struct AlphanumericCeaserCipher: Cipher {
         
         for character in newPlaintext {
             let unicode = character.unicodeScalars.first!.value
-            let shiftedUnicode = unicode - shiftBy
+            var shiftedUnicode = unicode - shiftBy
+            
+            // cyclical characters between A-Z or 0-9
+            if shiftedUnicode < 48 {
+                shiftedUnicode = shiftedUnicode + 43
+            } else if 58 <= shiftedUnicode && shiftedUnicode <= 64 {
+                shiftedUnicode = shiftedUnicode - 7
+            }
+            
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             decoded = decoded + shiftedCharacter
         }
