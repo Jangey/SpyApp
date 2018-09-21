@@ -31,8 +31,10 @@ class SpyAppViewController: UIViewController {
             output.text = "No cipher selected"
             return
         }
+        
         if let encoded = cipher.encode(plaintext, secret: secretText) {
             output.text = encoded
+            print(cipher)
         } else {
             output.text = "Error encoding"
         }
@@ -49,7 +51,7 @@ class SpyAppViewController: UIViewController {
         if let decoded = cipher.decode (plaintext, secret: secretText) {
             output.text = decoded
         } else {
-            output.text = "Error encoding"
+            output.text = "Error decoding"
         }
     }
 
